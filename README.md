@@ -1,28 +1,29 @@
-# Hi, I'm Adam (`s3amm3r`) 🐾
+# Adam (`s3amm3r`)
 
-<p align="center">
-  <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Cat furiously typing code on a keyboard" width="300" />
-</p>
+```bash
+$ whoami
+Adam (s3amm3r) — Systems & Low-Level Performance Engineer
 
-Systems programmer obsessed with **Rust**, **WebAssembly**, and squeezing every last millisecond out of low-level **Windows performance**.
+$ cat ~/.config/systems.json
+{
+  "primary": "Rust",
+  "domains": ["WebAssembly", "Windows Internals", "Network Stack Latency"],
+  "principles": ["Zero-cost abstractions", "Deterministic concurrency", "Memory safety"]
+}
 
-When I'm not writing zero-cost abstractions or profiling kernel latencies, I operate essentially like a cat: staring intensely at terminal screens, knocking bugs off the table, and turning caffeinated chaos into binaries with 0 errors and 0 warnings.
-
-<p align="center">
-  <img src="https://media.giphy.com/media/LmN8OYiY4m0X85K0Zz/giphy.gif" alt="Cat intently staring at a laptop screen debugging code" width="280" />
-</p>
-
----
+$ s3amm3r --ping
+Host: Windows x86_64 | QoS: DSCP 46 | Status: Ready
+```
 
 ### Focus & Systems Stack
 
 - **Systems & Memory Safety:** Rust (`cargo`, native performance, zero-cost abstractions)
 - **WebAssembly:** Freestanding Wasm runtime architectures
-- **Windows Internals & Networking:** Win32, TCP stack & QoS DSCP 46 optimization, low-latency performance tuning
+- **Windows Internals & Networking:** Win32, TCP stack & QoS DSCP 46 optimization, kernel latency stripping
 
 ---
 
-### Reach Out
+### Connect
 
 - **Discord:** `s3amm3r`
 - **Email:** s3amm3r@paygorn.vip
