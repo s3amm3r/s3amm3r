@@ -7,7 +7,40 @@
 
   <img src="./assets/terminal.svg" width="780" alt="Arch Linux Fastfetch Terminal" />
 
-  <br /><br />
+</div>
+
+<br />
+
+```bash
+# (joke) installing the essential dependencies
+$ sudo pacman -S rust
+:: Resolving dependencies...
+:: Looking for conflicting packages...
+
+Packages (1) rust-1.82.0-1
+
+Total Download Size:    64.20 MiB
+Total Installed Size:  285.50 MiB
+
+:: Proceed with installation? [Y/n] Y
+(1/1) checking keys in keyring                     [####################################] 100%
+(1/1) checking package integrity                   [####################################] 100%
+(1/1) loading package files                        [####################################] 100%
+(1/1) checking for file conflicts                  [####################################] 100%
+:: Processing package changes...
+(1/1) installing rust                              [####################################] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+:: System up to date. "I use Arch btw."
+```
+
+<div align="center">
+  <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Cat furiously typing code on a keyboard" width="260" />
+</div>
+
+<div align="center">
+
+  <br />
 
   <!-- Skill Icons -->
   <a href="https://skillicons.dev">
@@ -41,3 +74,16 @@
 - **Environment & OS:** Arch Linux (rolling release, minimal bloat, low-latency kernel tuning)
 - **WebAssembly:** Freestanding Wasm runtime architectures
 - **Windows Internals & Networking:** Win32, TCP stack & QoS DSCP 46 optimization, kernel latency stripping
+
+---
+
+<div align="center">
+  <img src="https://media.giphy.com/media/LmN8OYiY4m0X85K0Zz/giphy.gif" alt="Cat intently staring at a screen debugging code" width="260" />
+</div>
+
+<br />
+
+### Connect
+
+- **Discord:** `s3amm3r`
+- **Email:** s3amm3r@paygorn.vip
