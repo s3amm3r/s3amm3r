@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250" width="100%" height="auto">
+  <defs>
+    <style>
+      .window-bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; rx: 10px; }
+      .terminal-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 13px; }
+      .prompt { fill: #7ee787; font-weight: bold; }
+      .path { fill: #79c0ff; }
+      .delim { fill: #8b949e; }
+      .cmd { fill: #f0f6fc; }
+      .out-primary { fill: #d2a8ff; font-weight: 600; }
+      .out-sub { fill: #8b949e; }
+      .key { fill: #79c0ff; }
+      .val { fill: #a5d6ff; }
+      .punct { fill: #ff7b72; }
+      .accent { fill: #56d364; font-weight: bold; }
+      .cyan { fill: #38bdf8; }
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      .cursor { animation: blink 1s infinite; fill: #58a6ff; }
+    </style>
+  </defs>
+
+  <!-- Window Container -->
+  <rect width="718" height="248" x="1" y="1" class="window-bg" rx="10" />
+  
+  <!-- Titlebar -->
+  <path d="M 1 11 Q 1 1 11 1 L 709 1 Q 719 1 719 11 L 719 36 L 1 36 Z" fill="#161b22" />
+  <line x1="1" y1="36" x2="719" y2="36" stroke="#30363d" stroke-width="1.5" />
+
+  <!-- Window Dots -->
+  <circle cx="22" cy="18.5" r="6" fill="#ff5f56" />
+  <circle cx="42" cy="18.5" r="6" fill="#ffbd2e" />
+  <circle cx="62" cy="18.5" r="6" fill="#27c93f" />
+
+  <!-- Window Title -->
+  <text x="360" y="23" fill="#8b949e" font-family="ui-monospace, monospace" font-size="12" text-anchor="middle">s3amm3r@workstation:~</text>
+
+  <!-- Line 1: whoami -->
+  <text x="24" y="66" class="terminal-text">
+    <tspan class="prompt">s3amm3r@workstation</tspan><tspan class="delim">:</tspan><tspan class="path">~</tspan><tspan class="delim">$ </tspan><tspan class="cmd">whoami</tspan>
+  </text>
+  <text x="24" y="88" class="terminal-text">
+    <tspan class="out-primary">Adam (s3amm3r)</tspan> <tspan class="out-sub">— Systems &amp; Low-Level Performance Engineer</tspan>
+  </text>
+
+  <!-- Line 2: systems.json -->
+  <text x="24" y="122" class="terminal-text">
+    <tspan class="prompt">s3amm3r@workstation</tspan><tspan class="delim">:</tspan><tspan class="path">~</tspan><tspan class="delim">$ </tspan><tspan class="cmd">cat ~/.config/systems.json</tspan>
+  </text>
+  <text x="24" y="144" class="terminal-text">
+    <tspan class="punct">{</tspan> <tspan class="key">"primary"</tspan><tspan class="delim">:</tspan> <tspan class="val">"Rust"</tspan><tspan class="delim">,</tspan> <tspan class="key">"domains"</tspan><tspan class="delim">:</tspan> <tspan class="punct">[</tspan><tspan class="val">"Wasm"</tspan><tspan class="delim">,</tspan> <tspan class="val">"Win32"</tspan><tspan class="delim">,</tspan> <tspan class="val">"Network Latency"</tspan><tspan class="punct">]</tspan><tspan class="delim">,</tspan> <tspan class="key">"ethos"</tspan><tspan class="delim">:</tspan> <tspan class="val">"Zero-Cost Abstractions"</tspan> <tspan class="punct">}</tspan>
+  </text>
+
+  <!-- Line 3: ping -->
+  <text x="24" y="178" class="terminal-text">
+    <tspan class="prompt">s3amm3r@workstation</tspan><tspan class="delim">:</tspan><tspan class="path">~</tspan><tspan class="delim">$ </tspan><tspan class="cmd">s3amm3r --ping</tspan>
+  </text>
+  <text x="24" y="200" class="terminal-text">
+    <tspan class="out-sub">Host:</tspan> <tspan class="cyan">Windows x86_64</tspan> <tspan class="delim">│</tspan> <tspan class="out-sub">QoS:</tspan> <tspan class="accent">DSCP 46</tspan> <tspan class="delim">│</tspan> <tspan class="out-sub">Status:</tspan> <tspan class="accent">ONLINE ●</tspan>
+  </text>
+
+  <!-- Line 4: Prompt with Blinking Cursor -->
+  <text x="24" y="228" class="terminal-text">
+    <tspan class="prompt">s3amm3r@workstation</tspan><tspan class="delim">:</tspan><tspan class="path">~</tspan><tspan class="delim">$ </tspan>
+  </text>
+  <rect x="195" y="216" width="8" height="15" class="cursor" />
+</svg>
