@@ -70,7 +70,7 @@
     <text x="300" y="240"><tspan class="label">Runtimes: </tspan><tspan>Freestanding Wasm, Native Win32</tspan></text>
     <text x="300" y="262"><tspan class="label">Networking: </tspan><tspan>TCP CUBIC, QoS DSCP 46, Low-Latency</tspan></text>
     <text x="300" y="284"><tspan class="label">Philosophy: </tspan><tspan>Memory Safety &amp; Zero Bloat</tspan></text>
-    <text x="300" y="306"><tspan class="label">Tagline: </tspan><tspan class="quote">&quot;btw i use arch&quot;</tspan></text>
+    <text x="300" y="306"><tspan class="label">Tagline: </tspan><tspan class="quote">&quot;btw i DON&apos;T use arch&quot;</tspan></text>
 
     <!-- Terminal Color Palette -->
     <g transform="translate(300, 335)">
