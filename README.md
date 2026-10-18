@@ -1,22 +1,26 @@
 <div align="center">
 
   <h1>Adam · s3amm3r</h1>
-  <p><b>Systems Programmer · Low-Level Windows Performance · WebAssembly</b></p>
+  <p><b>Systems Programmer · Low-Level Performance · Rust &amp; Arch Linux</b></p>
 
   <br />
 
-  <img src="./assets/terminal.svg" width="720" alt="Terminal Shell" />
+  <img src="./assets/terminal.svg" width="780" alt="Arch Linux Fastfetch Terminal" />
 
   <br /><br />
 
   <!-- Skill Icons -->
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=rust,wasm,powershell,c,git,cloudflare&theme=dark" alt="Tech Stack Icons" />
+    <img src="https://skillicons.dev/icons?i=arch,linux,rust,wasm,powershell,c,git,cloudflare&theme=dark" alt="Tech Stack Icons" />
   </a>
 
   <br /><br />
 
-  <!-- Connect Badges -->
+  <!-- Badges -->
+  <a href="https://archlinux.org">
+    <img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white" alt="Arch Linux" />
+  </a>
+  &nbsp;
   <a href="https://discord.com">
     <img src="https://img.shields.io/badge/Discord-s3amm3r-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
   </a>
@@ -34,5 +38,6 @@
 ### ⚙️ Focus & Systems Stack
 
 - **Systems & Memory Safety:** Idiomatic Rust (`cargo`, native performance, zero-cost abstractions)
+- **Environment & OS:** Arch Linux (rolling release, minimal bloat, low-latency kernel tuning)
 - **WebAssembly:** Freestanding Wasm runtime architectures
 - **Windows Internals & Networking:** Win32, TCP stack & QoS DSCP 46 optimization, kernel latency stripping

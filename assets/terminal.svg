@@ -1,66 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250" width="100%" height="auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 375" width="100%" height="auto">
   <defs>
     <style>
       .window-bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; rx: 10px; }
-      .terminal-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 13px; }
-      .prompt { fill: #7ee787; font-weight: bold; }
-      .path { fill: #79c0ff; }
-      .delim { fill: #8b949e; }
-      .cmd { fill: #f0f6fc; }
-      .out-primary { fill: #d2a8ff; font-weight: 600; }
-      .out-sub { fill: #8b949e; }
-      .key { fill: #79c0ff; }
-      .val { fill: #a5d6ff; }
-      .punct { fill: #ff7b72; }
-      .accent { fill: #56d364; font-weight: bold; }
-      .cyan { fill: #38bdf8; }
-      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-      .cursor { animation: blink 1s infinite; fill: #58a6ff; }
+      .arch-logo { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 11.5px; fill: #1793d1; font-weight: bold; }
+      .term-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 13px; fill: #c9d1d9; }
+      .label { fill: #1793d1; font-weight: 700; }
+      .user { fill: #1793d1; font-weight: bold; font-size: 14.5px; }
+      .host { fill: #58a6ff; font-weight: bold; font-size: 14.5px; }
+      .sep { fill: #30363d; font-weight: bold; }
+      .accent { fill: #7ee787; font-weight: 600; }
+      .dim { fill: #8b949e; }
+      .quote { fill: #d2a8ff; font-style: italic; }
     </style>
   </defs>
 
-  <!-- Window Container -->
-  <rect width="718" height="248" x="1" y="1" class="window-bg" rx="10" />
+  <!-- Window Frame -->
+  <rect width="778" height="373" x="1" y="1" class="window-bg" rx="10" />
   
   <!-- Titlebar -->
-  <path d="M 1 11 Q 1 1 11 1 L 709 1 Q 719 1 719 11 L 719 36 L 1 36 Z" fill="#161b22" />
-  <line x1="1" y1="36" x2="719" y2="36" stroke="#30363d" stroke-width="1.5" />
+  <path d="M 1 11 Q 1 1 11 1 L 769 1 Q 779 1 779 11 L 779 36 L 1 36 Z" fill="#161b22" />
+  <line x1="1" y1="36" x2="779" y2="36" stroke="#30363d" stroke-width="1.5" />
 
-  <!-- Window Dots -->
+  <!-- Window Buttons -->
   <circle cx="22" cy="18.5" r="6" fill="#ff5f56" />
   <circle cx="42" cy="18.5" r="6" fill="#ffbd2e" />
   <circle cx="62" cy="18.5" r="6" fill="#27c93f" />
 
   <!-- Window Title -->
-  <text x="360" y="23" fill="#8b949e" font-family="ui-monospace, monospace" font-size="12" text-anchor="middle">s3amm3r@workstation:~</text>
+  <text x="390" y="23" fill="#8b949e" font-family="ui-monospace, monospace" font-size="12" text-anchor="middle">adam@archlinux: ~ (fastfetch)</text>
 
-  <!-- Line 1: whoami -->
-  <text x="24" y="66" class="terminal-text">
-    <tspan class="prompt">s3amm3r@workstation</tspan><tspan class="delim">:</tspan><tspan class="path">~</tspan><tspan class="delim">$ </tspan><tspan class="cmd">whoami</tspan>
-  </text>
-  <text x="24" y="88" class="terminal-text">
-    <tspan class="out-primary">Adam (s3amm3r)</tspan> <tspan class="out-sub">— Systems &amp; Low-Level Performance Engineer</tspan>
-  </text>
+  <!-- Left: Arch Linux ASCII Art Logo -->
+  <g id="arch-ascii">
+    <text x="28" y="65.0" class="arch-logo" xml:space="preserve">                  -`</text>
+    <text x="28" y="80.5" class="arch-logo" xml:space="preserve">                 .o+`</text>
+    <text x="28" y="96.0" class="arch-logo" xml:space="preserve">                `ooo/</text>
+    <text x="28" y="111.5" class="arch-logo" xml:space="preserve">               `+oooo:</text>
+    <text x="28" y="127.0" class="arch-logo" xml:space="preserve">              `+oooooo:</text>
+    <text x="28" y="142.5" class="arch-logo" xml:space="preserve">              -+oooooo+:</text>
+    <text x="28" y="158.0" class="arch-logo" xml:space="preserve">            `/:-:++oooo+:</text>
+    <text x="28" y="173.5" class="arch-logo" xml:space="preserve">           `/++++/+++++++:</text>
+    <text x="28" y="189.0" class="arch-logo" xml:space="preserve">          `/++++++++++++++:</text>
+    <text x="28" y="204.5" class="arch-logo" xml:space="preserve">         `/+++ooooooooooooo/`</text>
+    <text x="28" y="220.0" class="arch-logo" xml:space="preserve">        ./ooosssso++osssssso+`</text>
+    <text x="28" y="235.5" class="arch-logo" xml:space="preserve">       .oossssso-````/ossssss+`</text>
+    <text x="28" y="251.0" class="arch-logo" xml:space="preserve">      -osssssso.      :ssssssso.</text>
+    <text x="28" y="266.5" class="arch-logo" xml:space="preserve">     :osssssss/        osssso+++.</text>
+    <text x="28" y="282.0" class="arch-logo" xml:space="preserve">    /ossssssss/        +ssssooo/-</text>
+    <text x="28" y="297.5" class="arch-logo" xml:space="preserve">  `/ossssso+/:-        -:/+osssso+-</text>
+    <text x="28" y="313.0" class="arch-logo" xml:space="preserve"> `+sso+:-`                 `.-/+oso:</text>
+    <text x="28" y="328.5" class="arch-logo" xml:space="preserve">`++:.                           `-/+/</text>
+    <text x="28" y="344.0" class="arch-logo" xml:space="preserve">.`                                 `/</text>
+  </g>
 
-  <!-- Line 2: systems.json -->
-  <text x="24" y="122" class="terminal-text">
-    <tspan class="prompt">s3amm3r@workstation</tspan><tspan class="delim">:</tspan><tspan class="path">~</tspan><tspan class="delim">$ </tspan><tspan class="cmd">cat ~/.config/systems.json</tspan>
-  </text>
-  <text x="24" y="144" class="terminal-text">
-    <tspan class="punct">{</tspan> <tspan class="key">"primary"</tspan><tspan class="delim">:</tspan> <tspan class="val">"Rust"</tspan><tspan class="delim">,</tspan> <tspan class="key">"domains"</tspan><tspan class="delim">:</tspan> <tspan class="punct">[</tspan><tspan class="val">"Wasm"</tspan><tspan class="delim">,</tspan> <tspan class="val">"Win32"</tspan><tspan class="delim">,</tspan> <tspan class="val">"Network Latency"</tspan><tspan class="punct">]</tspan><tspan class="delim">,</tspan> <tspan class="key">"ethos"</tspan><tspan class="delim">:</tspan> <tspan class="val">"Zero-Cost Abstractions"</tspan> <tspan class="punct">}</tspan>
-  </text>
+  <!-- Right: Fastfetch System Information -->
+  <g id="fetch-info" class="term-text">
+    <!-- Header -->
+    <text x="300" y="68">
+      <tspan class="user">adam</tspan><tspan class="dim">@</tspan><tspan class="host">archlinux</tspan>
+    </text>
+    <text x="300" y="85" class="sep">-------------------------------------</text>
 
-  <!-- Line 3: ping -->
-  <text x="24" y="178" class="terminal-text">
-    <tspan class="prompt">s3amm3r@workstation</tspan><tspan class="delim">:</tspan><tspan class="path">~</tspan><tspan class="delim">$ </tspan><tspan class="cmd">s3amm3r --ping</tspan>
-  </text>
-  <text x="24" y="200" class="terminal-text">
-    <tspan class="out-sub">Host:</tspan> <tspan class="cyan">Windows x86_64</tspan> <tspan class="delim">│</tspan> <tspan class="out-sub">QoS:</tspan> <tspan class="accent">DSCP 46</tspan> <tspan class="delim">│</tspan> <tspan class="out-sub">Status:</tspan> <tspan class="accent">ONLINE ●</tspan>
-  </text>
+    <!-- Info Lines -->
+    <text x="300" y="108"><tspan class="label">OS: </tspan><tspan>Arch Linux x86_64</tspan></text>
+    <text x="300" y="130"><tspan class="label">Host: </tspan><tspan>Systems &amp; Low-Level Performance Lab</tspan></text>
+    <text x="300" y="152"><tspan class="label">Kernel: </tspan><tspan>Linux (zen / low-latency tuned)</tspan></text>
+    <text x="300" y="174"><tspan class="label">Uptime: </tspan><tspan>24/7 (Building &amp; Compiling)</tspan></text>
+    <text x="300" y="196"><tspan class="label">Shell: </tspan><tspan>zsh / fish</tspan></text>
+    <text x="300" y="218"><tspan class="label">Primary: </tspan><tspan class="accent">Rust</tspan><tspan> (cargo, zero-cost abstractions)</tspan></text>
+    <text x="300" y="240"><tspan class="label">Runtimes: </tspan><tspan>Freestanding Wasm, Native Win32</tspan></text>
+    <text x="300" y="262"><tspan class="label">Networking: </tspan><tspan>TCP CUBIC, QoS DSCP 46, Low-Latency</tspan></text>
+    <text x="300" y="284"><tspan class="label">Philosophy: </tspan><tspan>Memory Safety &amp; Zero Bloat</tspan></text>
+    <text x="300" y="306"><tspan class="label">Tagline: </tspan><tspan class="quote">&quot;btw i use arch&quot;</tspan></text>
 
-  <!-- Line 4: Prompt with Blinking Cursor -->
-  <text x="24" y="228" class="terminal-text">
-    <tspan class="prompt">s3amm3r@workstation</tspan><tspan class="delim">:</tspan><tspan class="path">~</tspan><tspan class="delim">$ </tspan>
-  </text>
-  <rect x="195" y="216" width="8" height="15" class="cursor" />
+    <!-- Terminal Color Palette -->
+    <g transform="translate(300, 335)">
+      <circle cx="10" cy="0" r="7" fill="#161b22" stroke="#30363d" stroke-width="1" />
+      <circle cx="32" cy="0" r="7" fill="#ff7b72" />
+      <circle cx="54" cy="0" r="7" fill="#7ee787" />
+      <circle cx="76" cy="0" r="7" fill="#d29922" />
+      <circle cx="98" cy="0" r="7" fill="#1793d1" />
+      <circle cx="120" cy="0" r="7" fill="#d2a8ff" />
+      <circle cx="142" cy="0" r="7" fill="#56d364" />
+      <circle cx="164" cy="0" r="7" fill="#f0f6fc" />
+    </g>
+  </g>
 </svg>
